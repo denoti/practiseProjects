@@ -1,0 +1,123 @@
+@import url('https://fonts.googlapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #6665ee;
+}
+.wrapper{
+    background: #fff;
+    border-radius: 15px;
+    max-width: 380px;
+    width: 100%;
+    padding: 25px;
+}
+.wrapper header{
+    font-size: 22px;
+    font-weight: 600;
+}
+.wrapper .poll-area{
+    margin: 20px 0 15px 0;
+}
+.poll-area label{
+    display: block;
+    border: 2px solid #e6e6e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    transition: all 0.2s ease;
+}
+label.selected{
+    border-color: #6665ee;
+}
+label .row{
+    display: flex;
+    justify-content: space-between;   
+}
+label .row .column{
+    display: flex;
+    align-items: center;
+}
+label .row .circle{
+    position: relative;
+    height: 19px;
+    width: 19px;
+    display: block;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+label.selected .row .circle{
+    border-color: #6665ee;
+}
+.row .circle::after{
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background: #ccc;
+    top: 2px;
+    left: 2px;
+    border-radius: inherit;
+    display: none;
+}
+label.selected .row .circle::after{
+    display: block;
+    background: #6665ee !important;
+}
+label:hover .row .circle::after{
+    display: block;
+    background: #e6e6e6;
+}
+label .row span{
+    font-size: 16px;
+    font-weight: 500;
+}
+label .row .percent{
+    display: none;
+}
+label .progress{
+    height: 7px;
+    width: 100%;
+    position: relative;
+    margin: 8px 0 3px 0;
+    background: #f0f0f0;
+    border-radius: 30px;
+    display: none;
+}
+label .progress::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(1% * var(--w));
+    background: #ccc;
+    border-radius: inherit;
+}
+label.selected .progress::after{
+    background: #6665ee;
+}
+label.selectall :is(.percent, .progress){
+    display: block;
+}
+
+p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+}
+a:hover{
+    color: grey;
+}

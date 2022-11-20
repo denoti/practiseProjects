@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form Validation</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p>
+            <a href="../../index.html">Homepage</a>
+        </p>
+        
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="https://app.stackup.dev/campaign_list" id="loginForm">
+                <div class="form-field">
+                    <label for="loginUsername">User Name</label>
+                    <input type="text" id="loginUsername" placeholder="Enter User name">
+                    <small class="alert-message">Error</small>
+                </div>
+
+                <div class="form-field">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter password">
+                    <small class="alert-message">Error</small>
+                </div>
+                <div class="form-field">
+                    <i class="far fa-eye"></i>
+                    <label for="">show/hide password</label>
+                </div>
+                <button class="btn" type="submit">Go</button>
+            </form>
+            <div class="reset-password">
+                <small><a href="#">Forgot user Name or Password</a></small>
+            </div>
+            
+            <form action="" class="form-request">
+                <div class="form-field">
+                    <label for="requestEmail">Email</label>
+                    <input type="email" name="" id="requestEmail" placeholder="Enter your Email">
+                    <small class="alert-message">Error</small>
+                </div>
+                <button class="btn red" type="submit">REQUEST</button>
+            </form>
+
+        </div>
+        <script type="text/javascript" src="main.js">
+        </script>
+    </body>
+</html>

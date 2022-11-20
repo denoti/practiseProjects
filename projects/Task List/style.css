@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a,li {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    height: 100vh;
+    background: url(https://source.unsplash.com/_CGxNOLM1gQ) center/cover no-repeat;
+}
+
+.container {
+    position: relative;
+    top: 30vh;
+    max-width: 300px;
+    margin: auto;
+}
+
+.enter {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: #04a1bf;
+    transition: all .5s ease;
+}
+
+#enter:hover {
+    background-color: #04a1bf;
+    color: #fff;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+li {
+    padding: 10px 20px;;
+    color: #111;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: 2px solid #04a1bf;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    transition: all .5s ease;
+    letter-spacing: 2px;
+}
+
+li:hover {
+    background: #264247;
+    color: #fff;
+}
+
+li > button {
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right;
+    color: #264247;
+    font-weight: 900;
+}
+
+li:hover > button {
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+input {
+    border-radius: 5px;
+    max-width: 70%;
+    padding: 5px;
+    border: none;
+}
+
+.done {
+    color: #666;
+    text-decoration: line-through;
+}
+
+.delete {
+    transform: scale(0);
+}
+
+p{
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+}
+a:hover{
+    color: grey;
+}

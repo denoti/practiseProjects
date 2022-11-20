@@ -1,0 +1,92 @@
+@import url('https://fonts.googlapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #a7ffeb;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.card{
+    background: white;
+    height: 380px;
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.card .content{
+    color: #202020;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+.content .user{
+    height: 100px;
+    width: 100px;
+    background: #33ffcf;
+    border: 1px solid #1affc9;
+    border-radius: 50%;
+    margin: 10px auto;
+    transform: translateZ(50px);
+}
+.user .fa-user{
+    color: white;
+    font-size: 40px;
+    line-height: 100px;
+}
+.content header{
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 600;
+    transform: translateZ(50px);
+}
+.content .follow-us{
+    font-size: 23px;
+    font-weight: 600;
+    transform: translateZ(50px);
+}
+.content .icons{
+    margin: 20px 0 10px 0;
+    transform: translateZ(50px);
+}
+.icons a{
+    margin: 0 4px;
+}
+.icons a span{
+    height: 45px;
+    width: 45px;
+    background: #33ffcf;
+    border: 1px solid #1affc9;
+    line-height: 44px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+.homepage{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+    text-align: center;
+}
+.homepage:hover{
+    color: grey;
+}

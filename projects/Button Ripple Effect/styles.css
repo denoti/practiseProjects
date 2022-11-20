@@ -1,0 +1,86 @@
+@import url('https://fonts.googlapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+}
+.wrapper{
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.wrapper .text{
+    font-size: 35px;
+    font-weight: 600;
+}
+.wrapper p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.wrapper .btns{
+    display: flex;
+    margin: 30px 0 20px 0;
+}
+.wrapper .btns a{
+    position: relative;
+    height: 60px;
+    width: 200px;
+    display: block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.23);
+}
+.wrapper .btns a:first-child{
+    background: linear-gradient(-90deg, #f5ce62, #e85a19);
+}
+.wrapper .btns a:last-child{
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+}
+.wrapper .btns a > span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ripples 0.6s linear infinite;
+}
+@keyframes ripples {
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%{
+        height: 500px;
+        width: 500px;
+        opacity: 0;
+    }
+}
+
+.homepage{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.homepage:hover{
+    color: grey;
+}

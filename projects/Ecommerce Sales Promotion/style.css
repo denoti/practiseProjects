@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 94vh;
+    background-color: red;
+    background: url(/img/lady.webp) center/cover no-repeat;
+    position: relative;
+}
+
+.offer-container {
+    width: 300px;
+    background-color: #fff;
+    padding: 1rem 0.5rem;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+}
+
+.btn:hover {
+    background-color: pink;
+}
+
+.countdown-container {
+    text-shadow: 1px 1px 2px rgba(87, 86, 86, 0.7);
+    font-size: 2rem;
+    text-align: center;
+}
+
+#offer {
+    background-color: #fff;
+    width: 100%;
+    font-weight: 600;
+    animation: fade 1s ease-in-out infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 401px) {
+    .offer-container {
+        display: none;
+    }
+}
+
+p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+}
+a:hover{
+    color: grey;
+}

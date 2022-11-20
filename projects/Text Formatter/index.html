@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
+        <title>Text Formatter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        body {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        p {
+            width: 300px;
+            background-color: #222;
+            color: #fff;
+            height: 80px;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+            border: 1px solid #555;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 3rem;
+        }
+    </style>
+    <body>
+        <h2>Type in your words</h2>
+        <input type="text" id="input-field" placeholder="input text">
+        <button class="btn uppercase red darken-1" style="text-transform: uppercase;">ABC</button>
+
+        <button class="btn lowercase blue darken-1" style="text-transform: lowercase;">ABC</button>
+
+        <button class="btn capitalize purple darken-1" style="text-transform: capitalize;">Abc</button>
+
+        <button class="btn bold grey darken-4" style="text-transform: uppercase;">B</button>
+
+        <button class="btn italic grey darken-4" style="font-style: italic;">i</button>
+
+        <button class="btn underline grey darken-4" style="text-decoration: underline;">ABC</button>
+        <p id="output-field">Output</p>
+
+        <p>
+            <a href="../../index.html">Homepage</a>
+        </p>
+        
+        <script type="text/javascript" src="main.js">
+        </script>
+    </body>
+</html>

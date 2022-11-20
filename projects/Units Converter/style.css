@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --red-color: #b50025;
+}
+
+body {
+    font-family: "Nunito",  sans-serif;
+    background: linear-gradient(90deg, #000, #6d6d6d, #000);
+    color: #ddd;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #333;
+    text-align: center;
+}
+
+img {
+    height: 150px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.contenders-container {
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    margin-top: 20vh;
+    width: 600px;
+    margin: 20vh auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.units-system {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    background-color: var(--red-color);
+    width: 70px;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contender-one, .contender-two {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.contenders {
+    text-align: center;
+}
+
+.contenders ul {
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.contenders ul li {
+    background-color: var(--red-color);
+    border-radius: 3px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contender-one ul li {
+    text-align: right;
+}
+
+.contender-two ul li {
+    text-align: left;
+}
+
+ul li {
+    margin: 1rem 0;
+    padding: 0.3rem 0;
+}
+
+input {
+    max-width: 50px;
+    background-color: transparent;
+    text-align: center;
+    color: #ddd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.output {
+    margin: 0 1rem;
+}
+
+/* Animations */
+.contender-one img {
+    animation: leftImgSlideIn 1s ease-out;
+}
+
+.contender-two img {
+    animation: righttImgSlideIn 1s ease-out;
+}
+
+h1 {
+    animation: vsTransition 1s ease-out;
+}
+
+@keyframes leftImgSlideIn {
+    from {
+        left: -500px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes righttImgSlideIn {
+    from {
+        right: -500px;
+        opacity: 0;
+    }
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes vsTransition {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.contenders li {
+    animation: rotation 1s ease-out;
+}
+
+@keyframes rotation {
+    from {
+        opacity: 0;
+        transform: rotateX(odeg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(360deg);
+    }
+}
+
+input {
+    animation: vsTransition 1s ease-out;
+}
+
+p{
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+}
+a:hover{
+    color: grey;
+}

@@ -1,0 +1,38 @@
+body {
+    font-family: 'Akaya Telivigala', cursive;
+    height: 100vh;
+    background: url(/img/cat.jpg) center/cover no-repeat;
+}
+
+.speed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80px;
+}
+
+label {
+    margin-right: 1rem;
+
+}
+
+input {
+    color: #fff;
+}
+
+#story {
+    color: #fff;
+    max-width: 400px;
+}
+
+p{
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+}
+a:hover{
+    color: grey;
+}

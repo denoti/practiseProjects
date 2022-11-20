@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(157, 233, 122);
+    text-align: center;
+    text-shadow: 2px 3px 3px;
+    position: relative;
+    z-index: 1;
+}
+
+#title {
+    margin: 2rem 0;
+    font-size: 5rem;
+}
+
+.shells-container {
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.shell {
+    display: inline-block;
+    cursor: pointer;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 10px;
+}
+
+.shell:hover {
+    background: #ddd;
+}
+
+.hovered {
+    background: #ddd;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.pea {
+    background: url(http://source.unsplash.com/nwjRmbXbLgw) center/cover;
+    position: relative;
+    height: 150px;
+    widows: 150px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    /* Hide pea */
+    opacity: 0;
+}
+
+.pea:active {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    font-size: 10rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+h2.win, h2.lose {
+    position: relative;
+    font-size: 8rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    top: 70vh;
+    margin: auto;
+}
+
+p{
+    margin-top: 50px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+}
+a:hover{
+    color: grey;
+}

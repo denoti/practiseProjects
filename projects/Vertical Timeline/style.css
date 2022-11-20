@@ -1,0 +1,239 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ddd;
+    overflow-x: hidden;
+    padding-bottom: 200px;
+}
+
+.intro {
+    background: url(https://source.unsplash.com/AnjGcUxk9ME) center/cover no-repeat;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 25vh;
+    z-index: 3;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5.5rem;
+    text-shadow: 2px 3px 2px #333;
+    letter-spacing: 4px;
+    padding-top: 100px;
+}
+
+.timeline {
+    top: 25vh;
+    position: relative;
+    height: 75vh;
+}
+
+ul {
+    padding: 50px 0;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 6px;
+    background-color: #333;
+    box-shadow: 0 0 10px 2px #333;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+}
+
+li div {
+    position: relative;
+    bottom: 0;
+    height: 550px;
+    width: 350px;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 2px #333;
+}
+
+li div::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+li:nth-child(odd) div {
+    left: 3rem;
+}
+
+li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0px;
+    border-color: transparent orangered transparent transparent;
+}
+
+li:nth-child(even) div {
+    left: -439px;
+}
+
+li:nth-child(even) div  h2 {
+    text-align: right;
+}
+
+li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0px 8px 16px;
+    border-color: transparent transparent transparent orangered;
+}
+
+h2 {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .5rem;
+    margin-top: 2rem;
+}
+
+li:nth-child(1) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(2) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(3) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(4) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(5) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(6) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(7) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(8) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(9) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(10) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(11) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(12) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li:nth-child(13) div {
+    background: url(https://source.unsplash.com/VotSVvmJSic) center/cover;
+}
+
+li::after {
+    transition: background 0.5s ease-in-out;
+}
+
+li.in-view::after {
+    background: orangered;
+}
+
+li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+li:nth-child(odd) div {
+    transform: translateX(200px);
+}
+
+li:nth-child(even) div {
+    transform: translateX(-200px);
+}
+
+li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+li.not-in-view div {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media (max-width: 900px) {
+    li div {
+        width: 250px;
+    }
+    li:nth-child(even) div {
+        left: -289px;
+    }
+}
+
+@media (max-width: 600px) {
+    li {
+        margin-left: 20px;
+    }
+
+    li div {
+        width: calc(100vw - 91px)
+    }
+
+    li:nth-child(even) div{
+        left: 45px;
+    }
+
+    li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent orangered transparent transparent;
+    }
+}
+

@@ -1,0 +1,47 @@
+:root {
+    --form-bg: #13232f;
+    --light-c: #fff;
+}
+
+body {
+    background-color: var(--light-c);
+}
+
+form {
+    background-color: var(--form-bg);
+    width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 1px 0 19px 2px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    color: #ddd;
+}
+
+input {
+    color: var(--light-c);
+}
+
+input::placeholder {
+    color: gray;
+}
+
+input.notValid {
+    color: red !important;
+    border-bottom: 1px solid red !important;
+}
+
+p{
+    margin-top: 50px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+}
+a:hover{
+    color: grey;
+}

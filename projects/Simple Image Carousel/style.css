@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 100;
+}
+:root {
+    --prim-c: #fff;
+    --sec-c: #717171;
+    --trans-speed: 0.5s;
+}
+
+.slides-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.slide {
+    display: none;
+
+}
+
+/* .slide:first-child {
+    display: block;
+} */
+
+.prev-btn,.next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2rem;
+    padding: 1rem;
+    color: var(--prim-c);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border-radius: 0 3px 3px 0;
+    transition: var(--trans-speed) ease-out;
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.prev-btn:active,
+.next-btn:active {
+    color: var(--sec-c);
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    padding: 0.8rem 1.5rem;
+    color: var(--prim-c);
+    width: 650px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.numbertext {
+    position: absolute;
+    font: 1rem;
+    right: 0;
+    top: 0;
+    color: var(--prim-c);
+    background-color: rgba(0, 0, 0, 0.65);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+
+.dots-container {
+    text-align: center;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color var(--trans-speed) ease-out;
+}
+
+.active,.dot:hover {
+    background-color: var(--sec-c);
+}
+
+.fade {
+    animation: fade var(--trans-speed) ease-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+p{
+    margin-top: 50px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 30px;
+}
+a:hover{
+    color: grey;
+}

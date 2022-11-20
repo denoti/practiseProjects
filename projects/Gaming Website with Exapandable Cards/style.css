@@ -1,0 +1,113 @@
+body {
+    background: url(https://source.unsplash.com/Mf23RF8xArY) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent !important;
+}
+
+.navbar a {
+    color: #ddd !important;
+}
+
+.navbar-toggler {
+    background-color: #ddd !important;
+}
+
+h1 {
+    text-align: center;
+    color: #ddd;
+    font-size: 8rem;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.cards-Container {
+    display: flex;
+    width: 90vw;
+}
+
+.card {
+    border: none;
+}
+
+div.card-container {
+    height: 500px;
+    width: 600px;
+    box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    border-radius: 15px;
+    color: #ddd;
+    text-shadow: 1px 2px 2px #333;
+    margin: 0 0.5rem;
+    position: relative;
+    flex: .2;
+    transition: flex .3s ease-in;
+    font-size: 0.7rem;
+}
+
+div.card-container:hover {
+    box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.8);
+    transition: .3s ease-in;
+}
+
+div.card-container:nth-child(1) {
+    background: url(https://source.unsplash.com/H-qqp_Eqaww) center/cover no-repeat;
+}
+
+div.card-container:nth-child(2) {
+    background: url(https://source.unsplash.com/fzOITuS1DIQ) center/cover no-repeat;}
+
+div.card-container:nth-child(3) {
+    background: url(https://source.unsplash.com/13W6AqIKV_I) center/cover no-repeat;}
+
+div.card-container:nth-child(4) {
+    background: url(https://source.unsplash.com/eCktzGjC-iU) center/cover no-repeat;
+}
+
+div.card-container:nth-child(5) {
+    background: url(https://source.unsplash.com/ARU18GpF6QQ) center/cover no-repeat;
+}
+
+div.card-container.active {
+    flex: 5;
+}
+
+.card-title {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    text-align: center;
+    font-size: 5em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.2s;
+}
+
+p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #8a9a5b;
+    font-size: 25px;
+    
+}
+a:hover{
+    color: grey;
+}

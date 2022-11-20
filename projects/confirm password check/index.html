@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Confirm Password Check</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- FontAwesome v6.6.6 -->
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <a href="../../index.html" class="homepage">Homepage</a> 
+        <div class="container">
+            <header>Confirm Password Check in <br>HTML CSS & JavaScript</header>
+            <form action="">
+                <div class="error-text">Confirm Password Not Match</div>
+                <div class="field">
+                    <input onkeyup="active()" id="pswrd_1" type="password" placeholder="Enter Password">
+                </div>
+                <div class="field">
+                    <input onkeyup="active_2()" id="pswrd_2" disabled type="password" placeholder="Confirm Password">
+                    <div class="show">SHOW</div>
+                </div>
+                <button type="button" disabled>check</button>
+            </form>
+        </div>
+        <script type="text/javascript" src="script.js">
+        </script>
+    </body>
+</html>
