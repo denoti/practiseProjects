@@ -1,6 +1,6 @@
 const quoteText = document.querySelector(".quote"),
 quoteBtn = document.querySelector("button"),
-authorName = document.querySelector(".name")
+authorName = document.querySelector(".name"),
 soundBtn = document.querySelector(".sound"),
 copyBtn = document.querySelector(".copy"),
 twitterBtn = document.querySelector(".twitter");

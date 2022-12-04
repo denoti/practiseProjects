@@ -3,51 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #7d2ae8;
     color: #fff;
 }
-
 nav {
     height: 60px;
     background-color: yellow;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-
 main {
     height: 100vh;
 }
-
 p {
     padding: 1rem;
 }
-
 h1 {
     margin: 2rem;
     text-align: center;
 }
-
 input {
     width: 0px;
     border: none;
     outline: none;
 }
-
 .fas {
     color: #111;
     font-size: 1.3rem;
     padding: 10px 5px;
 }
-
 .fas:hover {
     cursor: pointer;
     color: #333;
 }
-
 input.active-search {
     width: 80px;
     border-radius: 12px;
@@ -58,7 +49,6 @@ input.active-search {
     box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3);
     color: green;
 }
-
 input.active-search:hover {
     width: 120px;
     transition: .7s width ease-in;
@@ -68,7 +58,6 @@ input.active-search:focus {
     width: 300px;
     transition: 1s width ease-in;
 }
-
 p{
     text-align: left;
 }
@@ -79,4 +68,20 @@ a{
 }
 a:hover{
     color: grey;
+}
+@media(max-width: 480px){
+    input.active-search {
+        padding: 5px 3px;
+        font-size: 12px;
+    }
+    input.active-search:focus {
+        width: 155px;
+    }
+    a{
+        font-size: 12px;
+    }
+    .fas {
+        font-size: 1rem;
+        padding: 8px 3px;
+    }
 }

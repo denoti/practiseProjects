@@ -79,3 +79,29 @@ a{
 a:hover{
     color: grey;
 }
+@media(max-width: 480px){
+    .center{
+        width: 85vw;
+    }
+    form .buttons{
+        width: 240px;
+        margin: 0 auto;
+    }
+    input[type="button"]{
+        width: 45px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    input#equal{
+        width: 225px;
+        font-size: 25px;
+    }
+    input[type="text"]{
+        height: 48px;
+        width: 220px;
+        margin-top: 20px;
+        font-size: 20px;
+        padding-right: 20px;
+    }
+}

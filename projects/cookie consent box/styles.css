@@ -60,9 +60,6 @@ body{
 .buttons a{
     color: #FCBA7F;
 }
-
-
-
 .homepage{
     position: absolute;
     bottom: 400px;
@@ -74,4 +71,19 @@ body{
 }
 .homepage:hover{
     color: grey;
+}
+@media(max-width:480px){
+    .wrapper{
+
+        bottom: 15px;
+        left: 15px;
+        width: 250px;
+    }
+    .buttons button{
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+    .buttons a{
+        font-size: 12px;
+    }
 }

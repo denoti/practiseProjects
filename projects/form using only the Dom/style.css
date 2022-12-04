@@ -63,3 +63,7 @@ a{
 a:hover{
     color: grey;
 }
+
+input{
+    /* width: 80% !important; */
+}

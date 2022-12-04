@@ -67,7 +67,6 @@ body{
     background: #999;
     color: white;
     font-size: 18px;
-    font-size: 18px;
     padding: 10px 13px;
     border: 1px solid #808080;
     border-radius: 5px;
@@ -85,17 +84,6 @@ body{
     transition: .5s;
     background: #e60000;
 }
-
-
-
-
-
-
-
-
-
-
-
 .homepage{
     text-decoration: none;
     color: #8a9a5b;
@@ -105,4 +93,23 @@ body{
 }
 .homepage:hover{
     color: grey;
+}
+@media(max-width: 480px){
+    .popup_box{
+        width: 85vw;
+        padding: 15px;
+    }
+    .btns .btn1, .btns .btn2{
+        font-size: 12px;
+        padding: 7px 9px;
+    }
+    .popup_box h1{
+        font-size: 20px;    }
+    .popup_box label{
+        font-size: 20px;
+    }
+    .popup_box i{
+        font-size: 30px;
+        padding: 20px 30px;
+    }
 }

@@ -112,3 +112,15 @@ a{
 a:hover{
     color: grey;
 }
+@media(max-width: 480px){
+    .container{
+        width: 85vw;
+    }
+    .form-control {
+        width: 100%;
+    }
+    .form-control input {
+        width: 100%;
+        font-size: 15px;
+    }
+}

@@ -7,16 +7,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-
 body {
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    /* background-position: center; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
 }
-
 .clock-container {
     position: absolute;
     top: 45%;
@@ -26,20 +20,16 @@ body {
     text-align: center;
     color: #fff;
 }
-
 .clock {
     font-size: 150px;
 }
-
 .user {
     font-size: 2.8rem;
 }
-
 .focus-container {
     margin-top: 3rem;
     font-size: 2rem;
 }
-
 .focus-container input {
     width: 100%;
     height: 60px;
@@ -51,11 +41,9 @@ body {
     font-size: 3rem;
     color: #fff;
 }
-
 small {
     font-size: 50px;
 }
-
 p{
     margin-top: 50px;
     text-align: center;
@@ -67,4 +55,17 @@ a{
 }
 a:hover{
     color: grey;
+}
+@media(max-width: 480px){
+    .clock {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+    .user {
+        font-size: 2rem;
+    }
+    .focus-container {
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+    }
 }

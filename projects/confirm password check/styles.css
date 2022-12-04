@@ -101,19 +101,6 @@ form button.active{
 form button.active:hover{
     background: #219150;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container form{
     margin: 5px 8px;
 }
@@ -126,4 +113,9 @@ form button.active:hover{
 }
 .homepage:hover{
     color: grey;
+}
+@media (max-width: 480px){
+    .container{
+        width: 85vw;
+    }
 }
