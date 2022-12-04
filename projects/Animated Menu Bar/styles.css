@@ -86,3 +86,13 @@ a{
 a:hover{
     color: grey;
 }
+@media(max-width:480px){
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    nav._expand{
+        height: 60vh;
+        width: 170px
+    }
+}

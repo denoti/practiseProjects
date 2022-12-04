@@ -152,11 +152,30 @@ p{
     margin-bottom: 20px;
     text-align: center;
 }
-a{
+p a{
     text-decoration: none;
     color: #353a27;
     font-size: 3em;
 }
 a:hover{
     color: grey;
+}
+@media(max-width: 480px){
+    .main-container h2 {
+        font-size: 3rem;
+    }
+    .logo{
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 1.3em;
+    }
+    .main-nav-list a {
+        font-size: 1.6rem;
+    }
+    p a{
+        font-size: 1.8em;
+    }
+    footer span{
+        font-size: 0.8em;
+    }
 }

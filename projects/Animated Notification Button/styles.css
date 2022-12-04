@@ -14,7 +14,6 @@
 .container .notify::before{
     position: absolute;
     content: attr(data-count);
-    /* content: "1"; */
     top: 0px;
     right: -3px;
     font-size: 30px;

@@ -6,6 +6,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 html,body{
     display: grid;
     height: 100%;
@@ -90,9 +91,37 @@ html,body{
 
 a{
     text-decoration: none;
-    color: 8a9a5b;
+    color: #5f7913;
     font-size: 30px;
 }
 a:hover{
-    color: grey;
+    color: rgb(88, 32, 32);
+}
+
+@media(max-width: 480px){
+    .search-box{
+        width: 50px;
+        height: 40px;
+    }
+    .search-box.active{
+        width: 250px;
+    }
+    .search-box .cancel-btn,
+    .search-box .search-btn{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .search-box .search-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .search-box .cancel-btn.active{
+        right: -20px;
+    }
+    .search-box .search-btn.active{
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
 }

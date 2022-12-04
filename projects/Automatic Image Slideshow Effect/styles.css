@@ -9,7 +9,7 @@ body{
     background: tan;
 }
 .content{
-    height: 70vh;
+    height: 80vh;
     width: 80vw;
 }
 .content .images{
@@ -22,11 +22,6 @@ body{
     margin: 0 auto;
     border-radius: 10px;
 }
-
-p{
-    margin-bottom: 50px;
-    text-align: center;
-}
 a{
     text-decoration: none;
     color: #313f0b;
@@ -34,4 +29,18 @@ a{
 }
 a:hover{
     color: grey;
+}
+
+@media (max-width: 480px) {
+    .images img{
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+    a{
+        font-size: 2em;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
 }
