@@ -71,7 +71,6 @@ header p{
 .info-txt span{
     color: #aa57cc;
 }
-
 p{
     margin-bottom: 50px;
     text-align: center;
@@ -83,4 +82,9 @@ a{
 }
 a:hover{
     color: grey;
+}
+@media(max-width: 480px){
+    .wrapper {
+        max-width: 85vw;
+    }
 }

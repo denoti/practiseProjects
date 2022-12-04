@@ -167,3 +167,16 @@ a{
 a:hover{
     color: grey;
 }
+@media(max-width: 480px){
+    .wrapper{
+        width: 90vw;
+    }
+    .content button {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    .content .counter {
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+}

@@ -21,6 +21,7 @@ body::before {
     top: 0;
     width: 100%;
     background-color: transparent !important;
+    z-index: 10;
 }
 
 .navbar a {
@@ -110,4 +111,16 @@ a{
 }
 a:hover{
     color: grey;
+}
+@media(max-width: 480px){
+    .navbar {
+        background-color: grey !important;
+        z-index: 10;
+    }
+    h1 {
+        font-size: 3.6rem;
+    }
+    .card-title {
+        font-size: 2.5em;
+    }
 }

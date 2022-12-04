@@ -69,3 +69,8 @@ a{
 a:hover{
     color: grey;
 }
+@media(max-width: 480px){
+    .container{
+        width: 80vw;
+    }
+}

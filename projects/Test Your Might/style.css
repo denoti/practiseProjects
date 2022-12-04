@@ -18,7 +18,6 @@ header {
     background-color: #fff;
     border-radius: 10px;
     margin: auto;
-    /* height: 350px; */
 }
 
 header:hover {
@@ -75,4 +74,12 @@ a{
 }
 a:hover{
     color: grey;
+}
+@media(max-width: 480px){
+    .btn,h1,header{
+        width: 90vw;
+    }
+    h1,h4{
+        font-size: 3em;
+    }
 }

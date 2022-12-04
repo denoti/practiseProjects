@@ -22,7 +22,7 @@ body {
     min-width: 50vw;
     min-height: 20vh;
     max-width: 70vw;
-    max-height: 70vw;
+    max-height: 85vw;
     border: 1px solid #333;
     border-radius: 10px;
     display: flex;
@@ -31,7 +31,6 @@ body {
     justify-content: center;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.3);
-    /* background-color: rgba(0, 0, 95, 0.5); */
 }
 
 h1,h2{

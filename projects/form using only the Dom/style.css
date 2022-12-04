@@ -11,8 +11,9 @@ body {
     color: #fff;
     letter-spacing: 1.5px;
     position: relative;
-    margin: 3rem;
+    margin: 1rem;
     text-shadow: 1px 2px 1px #333;
+    width: 90vw;
 }
 
 input {
@@ -50,7 +51,6 @@ span {
         opacity: 1;
     }
 }
-
 p{
     margin-top: 50px;
     text-align: center;
@@ -62,8 +62,4 @@ a{
 }
 a:hover{
     color: grey;
-}
-
-input{
-    /* width: 80% !important; */
 }

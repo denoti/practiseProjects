@@ -90,7 +90,6 @@ h1,h2 {
 
 .laps-container span {
     letter-spacing: 3px;
-
 }
 
 .laps-container li {
@@ -131,4 +130,18 @@ a{
 }
 a:hover{
     color: grey;
+}
+@media(max-width: 480px){
+    .container{
+        width: 80vw;
+    }
+    .btn {
+        height: 80px;
+        width: 80px;
+        font-size: 0.8rem;
+    }
+    .lap-time {
+        width: 250px;
+        font-size: 3rem;
+    }
 }

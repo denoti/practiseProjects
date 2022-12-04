@@ -68,3 +68,9 @@ a{
 a:hover{
     color: grey;
 }
+@media(max-width: 480px){
+    .login-container {
+        max-width: 85vw;
+        color: #ddd;
+    }
+}

@@ -5,8 +5,6 @@ cardTitle.style.opacity = "1";
 
 cards.forEach(function(card) {
     card.addEventListener("click", function(e) {
-        // card.classList.add("active");
-        // console.log(card.childNodes)
         if(!card.classList.contains("active")) {
             cards.forEach((card)=> {
                 card.classList.remove("active");

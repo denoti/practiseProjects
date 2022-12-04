@@ -56,7 +56,7 @@ select{
 }
 
 p{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 a{
     text-decoration: none;
@@ -65,4 +65,9 @@ a{
 }
 a:hover{
     color: grey;
+}
+@media(max-width: 480px){
+    .card{
+        width: 90vw;
+    }
 }

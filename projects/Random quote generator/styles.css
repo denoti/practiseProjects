@@ -116,3 +116,16 @@ a{
 a:hover{
     color: grey;
 }
+@media(max-width: 480px){
+    .wrapper{
+        width: 80vw;
+    }
+    .features button{
+        font-style: 10px;
+        padding: 8px 15px;
+    }
+    .features ul li{
+        height: 35px;
+        width: 35px;
+    }
+}

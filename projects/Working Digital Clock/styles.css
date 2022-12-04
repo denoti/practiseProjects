@@ -43,3 +43,11 @@ body {
 .homepage:hover{
     color: grey;
 }
+@media(max-width: 480px){
+    .clock {
+        max-width: 90vw;
+    }
+    .clock .display {
+        font-size: 36px;
+    }
+}

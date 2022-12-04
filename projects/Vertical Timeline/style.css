@@ -236,4 +236,12 @@ li.not-in-view div {
         border-color: transparent orangered transparent transparent;
     }
 }
-
+@media(max-width: 480px){
+    .container {
+        max-width: 90vw;
+        font-size: 3rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}

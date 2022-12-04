@@ -57,3 +57,8 @@ a{
 a:hover{
     color: grey;
 }
+@media(max-width: 480px){
+    .box{
+        width: 85vw;
+    }
+}

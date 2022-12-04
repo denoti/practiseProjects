@@ -1,6 +1,6 @@
 const form = document.createElement("form");
 form.id = "myForm";
-form.style.width = "360px";
+// form.style.width = "360px";
 
 function createLabel(text) {
     const label =  `<label>${text}</label>`;
@@ -11,13 +11,11 @@ function createInput(type, placeholder, id ) {
     const input = `<input type="${type}" placeholder="${placeholder}" id="${id}">`;
     return input;
 }
-
-
 form.innerHTML = `
     <h2>Add User</h2>
     <div>
         <label>First Name:</label>
-        <input type="text" placeholder="First Name" id="FirstName"/>
+        <input  type="text" placeholder="First Name" id="FirstName"/>
     </div>
     <div>
         ${createLabel("Last Name:")}
@@ -87,7 +85,7 @@ form.addEventListener("submit", function(e) {
             const inputs = document.querySelectorAll("input");
             inputs.forEach(function(inputField) {
             inputField.value = "";
-    })
+            })
         }
     }
     
