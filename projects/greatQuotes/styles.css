@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+    background-color: #e3aee5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,12 +15,13 @@ body{
     height: 100vh;
 }
 main{
-    width: 60vw;
-    height: 40vh;
+    background-color: #6b566b;
+    width: 500px;
+    height: 300px;
     display: grid;
     align-items: center;
     justify-content: center;
-    background: #e3aee5;
+    box-shadow: 1px 1px 10px 5px;
     border-radius: 5px;
     padding: 10px;
 }
@@ -28,8 +30,8 @@ main{
     margin: auto;
 }
 h1{
-    background-color: black;
-    color: white;
+    box-shadow: 1px 1px 10px 5px;
+    color: rgb(8, 8, 8);
     padding: 15px;
     border-radius: 5px;
     font-size: 2rem;
@@ -38,7 +40,7 @@ p{
     font-size: 1.5rem;
 }
 .text{
-    background-color: rgb(80, 93, 80);
+    box-shadow: 1px 1px 10px 5px;
     color: rgb(29, 197, 219);
     display: flex;
     flex-direction: column;
@@ -47,6 +49,8 @@ p{
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 0;
+    border: none;
+    outline: none;
 }
 .author{
     color: white;
@@ -56,7 +60,6 @@ p{
     text-decoration: none;
     color: #8a9a5b;
     font-size: 30px;
-    margin-top: 50px;
     text-align: center;
 }
 .homepage:hover{
@@ -68,10 +71,16 @@ p{
         margin: 0;
     }
     main {
-        height: 100vh;
-        width: 100vw;
+        height: 50vh;
+        width: 80vw;
     }
     .text{
         margin-bottom: 25px;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 1rem;
     }
 }
