@@ -1,18 +1,23 @@
 let p = document.querySelector("p"),
 small = document.querySelector("small");
 let h1 = document.querySelector("h1");
-let {log} = console;
-
-// Minutes
+// let {log} = console;
+let quote = [];
 
 function getQuote(){
     fetch("https://api.quotable.io/random").then(res =>res.json()).then(result => {
-        p.innerText = result.content;
-        small.innerText = result.author;
-        let utterance = new SpeechSynthesisUtterance(`${p.innerText} by ${small.innerText}`)
-        speechSynthesis.speak(utterance);
+        quote.push(result.content);
+        quote.push(result.author);
+        p.innerText = quote[0];
+        small.innerText = quote[1];
     })
 }
+
+function speakQuote() {
+    let utterance = new SpeechSynthesisUtterance(`${p.innerText} by ${small.innerText}`)
+    speechSynthesis.speak(utterance);
+}
+
 function createTime(){
     let day = "AM"
     let time = new Date();
@@ -46,8 +51,13 @@ function speechToText(){
     let date = new Date();
     let minute = date.getMinutes();
     let seconds = date.getSeconds();
-    if(minute === 0 && seconds === 0){
+    if(seconds === 30){
         getQuote();
     }
+    if(minute === 30 && seconds === 0){
+        speakQuote();
+    }
+    quote = [];
 }
+
 setInterval(speechToText, 1000)
