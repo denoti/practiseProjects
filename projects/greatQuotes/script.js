@@ -1,5 +1,6 @@
 let p = document.querySelector("p"),
-small = document.querySelector("small");
+small = document.querySelector("small"),
+button = document.querySelector("button");
 let h1 = document.querySelector("h1");
 // let {log} = console;
 let quote = [];
@@ -51,13 +52,15 @@ function speechToText(){
     let date = new Date();
     let minute = date.getMinutes();
     let seconds = date.getSeconds();
-    if(seconds === 30){
+    if(seconds === 00 || seconds === 20 || seconds === 40){
         getQuote();
     }
-    if(minute === 30 && seconds === 0){
+    if(minute === 30 || minute === 00 && seconds === 0){
         speakQuote();
     }
     quote = [];
 }
+
+button.addEventListener("click", speakQuote);
 
 setInterval(speechToText, 1000)
