@@ -2,6 +2,7 @@ let p = document.querySelector("p"),
 small = document.querySelector("small"),
 button = document.querySelector("button");
 let h1 = document.querySelector("h1");
+
 // let {log} = console;
 let quote = [];
 
@@ -15,8 +16,13 @@ function getQuote(){
 }
 
 function speakQuote() {
-    let utterance = new SpeechSynthesisUtterance(`${p.innerText} by ${small.innerText}`)
-    speechSynthesis.speak(utterance);
+    button.disabled = true;
+    let utterance = new SpeechSynthesisUtterance(`${p.innerText} ${small.innerText}`);
+    speechSynthesis.speak(utterance); 
+    utterance.onend = (e) => {
+        button.disabled = false;
+        console.log(e.elapsedTime); // shows the elapsed time taken to say the text
+    }
 }
 
 function createTime(){
@@ -52,15 +58,40 @@ function speechToText(){
     let date = new Date();
     let minute = date.getMinutes();
     let seconds = date.getSeconds();
+    if((minute === 30 || minute === 00) && seconds === 0){
+        speakQuote();
+    }
+}
+
+function updateQuote() {
+    let date = new Date();
+    let seconds = date.getSeconds();
     if(seconds === 00 || seconds === 20 || seconds === 40){
         getQuote();
     }
-    if(minute === 30 || minute === 00 && seconds === 0){
-        speakQuote();
-    }
     quote = [];
 }
+// const synth = window.speechSynthesis;
+// button.addEventListener("click", ()=> {
+//     speakQuote();
+//     if(synth.speaking) {
+//         button.disabled = true;
+//     } 
+//     setTimeout(()=> {
+//         button.disabled = false;
+//     }, readingTime());
+// });
 
+// function readingTime() {
+//     const texts = document.querySelector(".text").innerText;
+//     const wps = 3;
+//     const lengthOfWords = texts.trim().split(/\s+/).length;
+//     const delayTime = Math.ceil(lengthOfWords / wps);
+//     return delayTime * 1000;
+// }
+
+// This BUTTON eventListener performs the same function as the code commented above and is more efficient
 button.addEventListener("click", speakQuote);
 
-setInterval(speechToText, 1000)
+setInterval(speechToText, 1000);
+setInterval(updateQuote, 1000);
